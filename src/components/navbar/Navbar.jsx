@@ -21,7 +21,7 @@ const Navbar = ({isAuth, signUserOut}) => {
         <Link to="/contact" className="link">Contact</Link>
         <Link to="/about" className="link">About</Link>
         <Link to="/create">Create</Link>
-        {!isAuth ? <Link to="/login">Login</Link>:<button onClick={signUserOut}>SignOut</button>}
+        {!isAuth ? <Link to="/login">Login</Link>:<button onClick={signUserOut} className="signOut">SignOut</button>}
         {/* <AuthLinks /> */}
         <Link to="/search">
           <FaSearch className="search-icon"/>

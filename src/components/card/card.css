@@ -8,7 +8,12 @@
   display: flex;
   gap: 35px;
 }
-  
+.card-title{
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
   .card-imageContainer {
     flex: 1;
     height: 350px;

@@ -14,6 +14,7 @@ import CreatePost from './pages/create/CreatePost';
 import Post from './pages/post/Post';
 import Search from './components/search/Search';
 
+
 function App() {
   const [isAuth, setIsAuth] = useState(false);
 

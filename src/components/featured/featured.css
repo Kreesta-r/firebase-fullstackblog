@@ -4,9 +4,15 @@
   
   .title {
     font-size: 96px;
-    font-weight: 300;
+    font-family: var(--titleFont);
+    font-weight: 400;
+    font-style: normal;
   }
-  
+  .title em{
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
   .post {
     margin-top: 60px;
     display: flex;

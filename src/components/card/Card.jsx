@@ -12,10 +12,10 @@ const Card = ({ post }) => {
         <div className="card-textContainer">
           <div className="card-detail">
             <span className="card-category">{post.category} </span>
-            <span className="card-date">&bull;{new Date(post.timestamp.toDate()).toLocaleDateString()}</span>
+            <span className="card-date">  &bull; {new Date(post.timestamp.toDate()).toLocaleDateString()}</span>
             
           </div>
-          <h1>{post.title}</h1>
+          <h1 className='card-title'>{post.title}</h1>
           <p className="card-desc">{post.body}</p>
           <Link to={`/post/${post.id}`} className="card-link">Read More</Link>
         </div>
