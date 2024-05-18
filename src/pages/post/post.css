@@ -1,0 +1,26 @@
+.post-container{
+    display: flex;
+    flex-direction: column;
+    color:var(--textColor)
+}
+.post-container img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+.post-imgContainer{
+    height:300px;
+    width:100%;
+}
+.postText{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.post-content{
+    min-height: 50vh;
+}
+.cat{
+    margin-top: 50px;
+    text-transform: capitalize;
+}

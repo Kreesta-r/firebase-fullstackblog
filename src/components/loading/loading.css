@@ -1,0 +1,17 @@
+.loading-page {
+    position: fixed; /* Ensures the loader stays in place when scrolling */
+    top: 0; /* Positions the loader at the top */
+    left: 0; /* Positions the loader at the left */
+    width: 100vw; /* Stretches the container to 100% viewport width */
+    height: 100vh; /* Stretches the container to 100% viewport height */
+    display: flex; /* Enables flexbox for centering */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    background-color: white; /* Optional: Adds a semi-transparent background */
+    position:absolute;
+    flex-direction: column;
+    gap: 50px;
+    color: grey;
+    
+  }
+  

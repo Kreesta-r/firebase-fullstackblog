@@ -1,0 +1,52 @@
+.create-post {
+    margin-top: 20px;
+  }
+  
+  .create-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .create-title {
+    text-align: center;
+  }
+  
+  .create-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .create-input,
+  .create-textarea,
+  .upload-option {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .upload-methods {
+    margin-bottom: 10px;
+  }
+  .labels{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  .create-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .create-button:hover {
+    background-color: #45a049;
+  }
+  
