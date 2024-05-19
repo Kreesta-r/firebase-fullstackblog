@@ -18,6 +18,7 @@
     font-size: 36px;
     font-weight: bold;
     align-items: center;
+    font-family: var(--descFont);
   }
   
   .links {
@@ -27,6 +28,7 @@
     gap: 20px;
     flex: 2;
     font-size: 10px;
+    font-family: var(--descFont);
   }
   .search-icon{
     color:grey;

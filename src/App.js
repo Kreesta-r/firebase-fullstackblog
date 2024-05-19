@@ -34,12 +34,12 @@ function App() {
           <Routes>
             <Route path="/" element={<Home isAuth={isAuth} />} />
             <Route path='/login' element={<Login setIsAuth={setIsAuth} />} />
-            <Route path='/register' element={<Register isAuth={isAuth} />} />
+            <Route path='/register' element={<Register setIsAuth={setIsAuth}/>} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/create" element={<CreatePost isAuth={isAuth}/>} />
             <Route path="/search" element={<Search />} />
-            <Route path="/post/:id" element={<Post />} />
+            <Route path="/post/:id" element={<Post isAuth={isAuth}/>} />
             <Route path="*" element={<h1>No page found</h1>} />
           </Routes>
           <Footer />
