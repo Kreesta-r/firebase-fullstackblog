@@ -1,83 +1,47 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import styles from "./menuPosts.module.css"
+import React from 'react';
+import { Link } from "react-router-dom"
+import './menuPosts.css'; // Import your stylesheet (if needed)
 
-const MenuPosts = ({ withImage }) => {
+const MenuPosts = ({ withImage = true }) => { // Set default for withImage
+
   return (
-    <div className={styles.items}>
-      <Link href="/" className={styles.item}>
+    <div className="menupost-items">
+      <Link to="/" className="menupost-item">
         {withImage && (
-          <div className={styles.imageContainer}>
-            <Image src="/p1.jpeg" alt="" fill className={styles.image} />
+          <div className="menupost-imageContainer">
+            <img src="/p1.jpeg" alt="" fill className="menupost-image" />
           </div>
         )}
-        <div className={styles.textContainer}>
-          <span className={`${styles.category} ${styles.travel}`}>Travel</span>
-          <h3 className={styles.postTitle}>
+        <div className="menupost-textContainer">
+          <span className={`menupost-category menupost-travel`}>Travel</span>
+          <h3 className="menupost-postTitle">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </h3>
-          <div className={styles.detail}>
-            <span className={styles.username}>John Doe</span>
-            <span className={styles.date}> - 10.03.2023</span>
+          <div className="menupost-detail">
+            <span className="menupost-username">John Doe</span>
+            <span className="menupost-date"> - 10.03.2023</span>
           </div>
         </div>
       </Link>
-      <Link href="/" className={styles.item}>
+      {/* Repeat Link components for other posts */}
+      <Link to="/" className="menupost-item">
         {withImage && (
-          <div className={styles.imageContainer}>
-            <Image src="/p1.jpeg" alt="" fill className={styles.image} />
+          <div className="menupost-imageContainer">
+            <img src="/p2.jpeg" alt="" fill className="menupost-image" />
           </div>
         )}
-        <div className={styles.textContainer}>
-          <span className={`${styles.category} ${styles.culture}`}>
-            Culture
-          </span>
-          <h3 className={styles.postTitle}>
+        <div className="menupost-textContainer">
+          <span className={`menupost-category menupost-culture`}>Culture</span>
+          <h3 className="menupost-postTitle">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </h3>
-          <div className={styles.detail}>
-            <span className={styles.username}>John Doe</span>
-            <span className={styles.date}> - 10.03.2023</span>
+          <div className="menupost-detail">
+            <span className="menupost-username">John Doe</span>
+            <span className="menupost-date"> - 10.03.2023</span>
           </div>
         </div>
       </Link>
-      <Link href="/" className={styles.item}>
-        {withImage && (
-          <div className={styles.imageContainer}>
-            <Image src="/p1.jpeg" alt="" fill className={styles.image} />
-          </div>
-        )}
-        <div className={styles.textContainer}>
-          <span className={`${styles.category} ${styles.food}`}>Food</span>
-          <h3 className={styles.postTitle}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </h3>
-          <div className={styles.detail}>
-            <span className={styles.username}>John Doe</span>
-            <span className={styles.date}> - 10.03.2023</span>
-          </div>
-        </div>
-      </Link>
-      <Link href="/" className={styles.item}>
-        {withImage && (
-          <div className={styles.imageContainer}>
-            <Image src="/p1.jpeg" alt="" fill className={styles.image} />
-          </div>
-        )}
-        <div className={styles.textContainer}>
-          <span className={`${styles.category} ${styles.fashion}`}>
-            Fashion
-          </span>
-          <h3 className={styles.postTitle}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </h3>
-          <div className={styles.detail}>
-            <span className={styles.username}>John Doe</span>
-            <span className={styles.date}> - 10.03.2023</span>
-          </div>
-        </div>
-      </Link>
+      {/* ... Add more Link components as needed */}
     </div>
   );
 };

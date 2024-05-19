@@ -4,7 +4,8 @@ import { db } from '../../firebase'; // Adjust the path as necessary
 import Featured from '../../components/featured/Featured'
 import CategoryList from '../../components/categoryList/CategoryList'
 import CardList from '../../components/cardList/CardList'
-import Menu from '../../components/menu/Menu'
+// import Menu from '../../components/menu/Menu'
+import './home.css';
 function Home() {
 
   const [posts, setPosts] = useState([]);
@@ -26,7 +27,7 @@ function Home() {
     <CategoryList posts={posts}/>
     <div className="content">
         <CardList posts={posts}/>
-        <Menu posts={posts}/>
+        {/* <Menu posts={posts}/> */}
     </div>
     </div>
   )

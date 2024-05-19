@@ -6,7 +6,7 @@ import { auth } from './firebase';
 import Home from './pages/home/Home';
 import About from './pages/about/About';
 import Login from './pages/auth/Login';
-import Register from './pages/auth/Register';
+// import Register from './pages/auth/Register';
 import Contact from './pages/contact/Contact';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
@@ -34,7 +34,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home isAuth={isAuth} />} />
             <Route path='/login' element={<Login setIsAuth={setIsAuth} />} />
-            <Route path='/register' element={<Register setIsAuth={setIsAuth}/>} />
+            {/* <Route path='/register' element={<Register setIsAuth={setIsAuth}/>} /> */}
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/create" element={<CreatePost isAuth={isAuth}/>} />

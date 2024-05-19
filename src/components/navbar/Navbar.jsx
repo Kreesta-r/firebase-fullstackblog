@@ -14,7 +14,9 @@ const Navbar = ({isAuth, signUserOut}) => {
         <img src="/tiktok.png" alt="tiktok" width={24} height={24} />
         <img src="/youtube.png" alt="youtube" width={24} height={24} />
       </div>
-      <div className="logo">Kreestatek</div>
+      <div className="logo">
+        <Link to="/">Kreestatek</Link>
+      </div>
       <div className="links">
         {/* <ThemeToggle /> */}
         <Link to="/" className="link">Home</Link>
