@@ -11,6 +11,9 @@
     gap: 10px;
     flex: 1;
   }
+  .naviglink{
+    font-size: 1.2rem;
+  }
   
   .logo {
     flex: 1;
@@ -32,12 +35,13 @@
   }
   .search-icon{
     color:grey;
+    font-size: 1.2rem;
   }
   .search-icon:hover{
     color:black;
   }
   .signOut{
-    font-size: 16px;
+    font-size: 1.2rem;
     border: none;
     background-color: transparent;
   }

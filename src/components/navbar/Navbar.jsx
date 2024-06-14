@@ -19,11 +19,11 @@ const Navbar = ({isAuth, signUserOut}) => {
       </div>
       <div className="links">
         {/* <ThemeToggle /> */}
-        <Link to="/" className="link">Home</Link>
-        <Link to="/contact" className="link">Contact</Link>
-        <Link to="/about" className="link">About</Link>
-        <Link to="/create">Create</Link>
-        {!isAuth ? <Link to="/login">Login</Link>:<button onClick={signUserOut} className="signOut">SignOut</button>}
+        <Link to="/" className="naviglink">Home</Link>
+        <Link to="/contact" className="naviglink">Contact</Link>
+        <Link to="/about" className="naviglink">About</Link>
+        <Link to="/create" className="naviglink">Create</Link>
+        {!isAuth ? <Link to="/login" className="naviglink">Login</Link>:<button onClick={signUserOut} className="signOut">SignOut</button>}
         {/* <AuthLinks /> */}
         <Link to="/search">
           <FaSearch className="search-icon"/>
